@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinate Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Coordinate Converter</h1>
+        
+        <div class="converter">
+            <h2>DMS to DD</h2>
+            <input type="number" id="dmsDegrees" placeholder="Degrees">
+            <input type="number" id="dmsMinutes" placeholder="Minutes">
+            <input type="number" id="dmsSeconds" placeholder="Seconds">
+            <select id="dmsDirection">
+                <option value="N">N</option>
+                <option value="S">S</option>
+                <option value="E">E</option>
+                <option value="W">W</option>
+            </select>
+            <button onclick="convertDmsToDd()">Convert</button>
+            <p id="dmsToDdResult"></p>
+        </div>
+
+        <div class="converter">
+            <h2>DD to DMS</h2>
+            <input type="number" id="dd" placeholder="Decimal Degrees">
+            <button onclick="convertDdToDms()">Convert</button>
+            <p id="ddToDmsResult"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
